@@ -6,13 +6,13 @@ close all
 % Vanderbilt University
 
 % =========== test setup ==============
-test = 4; % 1: overtaking, 2: congested traffic, 3: queue clearance, 4:creeping traffic
-Npc = [500 800 1000 1500 2000]; % number of particles
-% Npc = 1500;
+test = 1; % 1: overtaking, 2: congested traffic, 3: queue clearance, 4:creeping traffic
+% Npc = [500 800 1000 1500 2000]; % number of particles
+Npc = 1500;
 Nr = 4; % number of simulation runs
-spatial_correlation = false; % toggle SCNM
+spatial_correlation = true; % toggle SCNM
 show_sim = false; % toggle simulation plots
-show_est = false; % toggle estimation plots
+show_est = true; % toggle estimation plots
 len = 60; % 60 characteristic length for spatial correlation
 T_pi = []; % particle influence summary table
 directory = pwd;
